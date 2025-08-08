@@ -1,106 +1,61 @@
-# Existing Tools for Automated Mathematics Grading
+# Existing Tools and Platforms
 
-This document catalogs the current landscape of tools and platforms for automated mathematics grading, from OCR services to full grading platforms.
+This document catalogs current tools and platforms for automated mathematics grading, with links and analysis of their capabilities and limitations.
 
 ## OCR and Digitization Tools
 
-### Mathpix Snip
-- **Purpose**: Commercial OCR service that converts handwritten/printed mathematical expressions into LaTeX
-- **Use Case**: Widely used to pre‑process student work before feeding it into grading systems
-- **Limitations**: 
-  - Digitisation tool only – does not grade or locate errors
-  - Sequence‑to‑sequence HME‑recognition models struggle with complex two‑dimensional notation
-  - Used in GPT‑4 grading studies because other models perform poorly on complex expressions
+### [Mathpix Snip](https://mathpix.com/)
+**Commercial OCR Service**  
+Converts handwritten/printed mathematical expressions into LaTeX. Widely used to pre‑process student work before feeding into grading systems. Digitisation tool only – does not grade or locate errors. Used in GPT‑4 grading studies because sequence‑to‑sequence models struggle with complex two‑dimensional notation.
 
 ## Commercial Grading Platforms
 
-### Graded.Pro
-- **Target Audience**: Middle‑ and high‑school mathematics
-- **Features**:
-  - Accepts scanned handwritten or typed work
-  - Supports step‑by‑step solutions, equations, graphs and word problems
-  - Teachers upload photos, system provides AI‑generated scores and voice/text annotations
-  - Teachers can override scores
-- **Limitations**:
-  - Evidence of accuracy is marketing‑based
-  - Does not claim to understand proofs or abstract reasoning
-  - Emphasises teacher control over automated analysis
+### [Graded.Pro](https://graded.pro/pages/best-ai-grading-tool-for-math)
+**AI Grading Platform for K-12 Mathematics**  
+Accepts scanned handwritten or typed work. Supports step‑by‑step solutions, equations, graphs and word problems. Teachers upload photos, system provides AI‑generated scores with voice/text annotations. Evidence of accuracy is marketing‑based; does not claim to understand proofs or abstract reasoning.
 
-### Gradescope (Turnitin)
-- **Target Audience**: Universities and higher education
-- **Features**:
-  - Upload scanned exams and grade via dynamic rubrics
-  - Uses OCR and AI to group similar answers
-  - Instructors grade one representative and propagate the score
-  - Supports written responses, mathematical equations, diagrams and code
-  - Automatic grouping of similar answers, dynamic rubrics and analytics
-- **Limitations**:
-  - Does not automatically detect logical errors
-  - Clusters and scores answers based on similarity rather than understanding
-  - Accelerates grading but doesn't assess reasoning process
+### [Gradescope](https://elearning.ufl.edu/supported-services/gradescope/)
+**University Grading Platform (Turnitin)**  
+Upload scanned exams and grade via dynamic rubrics. Uses OCR and AI to group similar answers so instructors can grade one representative and propagate scores. Supports written responses, equations, diagrams and code. Does not automatically detect logical errors—clusters answers based on similarity rather than understanding.
 
 ### ScribeSense / Quick Comments / Conker AI
-- **Purpose**: Automated grading of multiple‑choice or short‑answer mathematics homework
-- **Features**: Can scan answer sheets and apply grading rules quickly
-- **Limitations**: 
-  - Public descriptions emphasise time savings but provide few technical details
-  - Designed for basic calculations or multiple‑choice formats
-  - Not suited for long proofs or complex reasoning
+**Multiple-Choice and Short-Answer Systems**  
+Commercial products for automated grading of basic mathematics homework. Can scan answer sheets and apply grading rules quickly. Designed for basic calculations or multiple‑choice formats, not suited for long proofs or complex reasoning.
 
 ## Specialized Systems
 
-### Recursive AI Grading Assistant
-- **Context**: Custom AI grading system developed in Japan (2024)
-- **Target**: Elementary‑school mathematics
-- **Process**:
-  - Students upload photos of workbook pages
-  - System recognises handwritten numbers
-  - Computes correct answer and applies government scoring guidelines
-  - Returns instant scores
-- **Success Factors**:
-  - Trained on large, labelled dataset
-  - Strict adherence to scoring formats
-  - Demonstrates feasibility when problems involve basic arithmetic and fixed formats
-- **Limitations**: Limited to elementary arithmetic, not extensible to complex reasoning
+### [Recursive AI Grading Assistant](https://recursiveai.co.jp/case-studies/enhancing-education-efficiency-with-automated-grading)
+**Elementary School Math System, Japan 2024**  
+Students upload photos of workbook pages; system recognises handwritten numbers, computes correct answers, and applies government scoring guidelines. Trained on large, labelled dataset for high accuracy with basic arithmetic and fixed formats. Limited to elementary arithmetic, not extensible to complex reasoning.
 
-### Virtual AI Teacher (VATE)
-- **Developer**: Squirrel AI
-- **Approach**: 
-  - Analyses student drafts and maintains an "error pool"
-  - Engages in multi‑round dialogue to point out mistakes
-  - Suggests corrections through conversational feedback
-- **Performance**: 78.3% accuracy in diagnosing elementary‑level mathematical errors
-- **Innovation**: Shows that combining error tracking with conversational feedback can improve learning
+### [Virtual AI Teacher (VATE)](https://arxiv.org/html/2409.09403v1)
+**Squirrel AI Dialogue System**  
+Analyses student drafts and maintains an "error pool." Engages in multi‑round dialogue to point out mistakes and suggest corrections. Achieved 78.3% accuracy in diagnosing elementary‑level mathematical errors. Shows that combining error tracking with conversational feedback can improve learning.
 
 ## Computer Algebra System (CAS) Based Tools
 
-### STACK
-- **Type**: Open‑source system for online mathematics assessment
-- **Mechanism**: 
-  - Evaluates answers by algebraic equivalence using the Maxima CAS
-  - Provides specific feedback while separating validation from assessment
-- **Strengths**: Effective for algebraic manipulation
-- **Limitations**: Cannot grade reasoning or proofs
+### [STACK](https://stack-assessment.org/)
+**Open-Source Online Mathematics Assessment**  
+Evaluates answers by algebraic equivalence using the Maxima CAS. Provides specific feedback while separating validation from assessment. Effective for algebraic manipulation but cannot grade reasoning or proofs.
 
-### Other CAS Systems (MapleTA, LON‑CAPA)
-- **Purpose**: Online mathematics assessment
-- **Approach**: Verify algebraic equivalence but cannot assess reasoning
-- **Historical Context**: Early automated grading systems used CAS to check final answers
+### MapleTA / LON-CAPA
+**Legacy CAS Systems**  
+Online mathematics assessment systems that verify algebraic equivalence but cannot assess reasoning. Early automated grading systems used CAS to check final answers only.
 
-## Key Observations
+## Analysis and Limitations
 
-### Current Limitations
-1. **OCR remains a bottleneck** for complex mathematical notation
-2. **Efficiency over analysis**: Current platforms prioritise grading speed over deep error understanding
-3. **Final answer focus**: Most tools check equivalence rather than reasoning process
-4. **Limited complexity**: Systems work well for elementary arithmetic but struggle with advanced mathematics
+### Current Technical Challenges
+1. **OCR Bottleneck**: Complex two‑dimensional mathematical notation remains difficult for automated recognition
+2. **Efficiency Over Understanding**: Platforms prioritise grading speed over deep error analysis
+3. **Final Answer Focus**: Most tools check equivalence rather than reasoning process
+4. **Limited Scalability**: Success with elementary arithmetic doesn't extend to advanced mathematics
 
 ### Success Patterns
-1. **Well-defined tasks**: AI grading can be reliable when problems have fixed formats and clear scoring criteria
-2. **Human oversight**: Most successful systems maintain teacher control and override capabilities
-3. **Hybrid approaches**: Combining automated processing with human verification shows promise
+1. **Well-Defined Tasks**: AI grading works when problems have fixed formats and clear scoring criteria
+2. **Human Oversight**: Successful systems maintain teacher control and override capabilities  
+3. **Hybrid Approaches**: Combining automated processing with human verification shows promise
 
-### Technical Challenges
-1. **Handwritten expression recognition**: Complex two‑dimensional mathematical notation remains difficult
-2. **Reasoning vs. answers**: Understanding solution processes requires more than final answer verification
-3. **Scalability**: Extending elementary arithmetic success to advanced mathematics like linear algebra proofs
+### Research Gaps
+1. **Handwritten Expression Recognition**: Complex notation processing remains unsolved
+2. **Process vs. Product**: Understanding solution methods requires more than answer verification
+3. **Advanced Mathematics**: Extending success from arithmetic to subjects like linear algebra proofs
