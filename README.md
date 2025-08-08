@@ -4,23 +4,23 @@ A comprehensive collection of research on automated assessment and error diagnos
 
 ## Table of Contents
 
-### 📊 [Benchmarks and Datasets](docs/benchmarks.md)
-Comprehensive overview of evaluation benchmarks for automated mathematics grading systems:
+### [Benchmarks and Datasets](docs/benchmarks.md)
+Evaluation benchmarks for automated mathematics grading systems:
 - **Fermat Benchmark** - 2,200 handwritten solutions across four error dimensions
 - **CHECK-MAT** - Russian national exam handwritten solutions with expert grades
 - **MathCCS** - Real problems with expert-annotated error categories
 - **FATE-M** - Undergraduate abstract algebra problems in Lean4
 - Error classification frameworks and evaluation metrics
 
-### 🛠️ [Existing Tools and Platforms](docs/tools.md)
-Analysis of current automated grading tools and their capabilities:
+### [Existing Tools and Platforms](docs/tools.md)
+Current automated grading tools and their capabilities:
 - **OCR Services** - Mathpix Snip and handwritten expression recognition
 - **Commercial Platforms** - Graded.Pro, Gradescope, specialized systems
 - **CAS-based Systems** - STACK, MapleTA, LON-CAPA
 - Technical limitations and success patterns
 
-### 📚 [Research Papers and Studies](docs/research-papers.md)
-Curated collection of key research papers with summaries and findings:
+### [Research Papers and Studies](docs/research-papers.md)
+Key research papers with summaries and findings:
 - **Vision-Language Models** - GPT-4, Gemini studies on handwritten math
 - **Error Diagnosis** - Classification systems and conversational feedback
 - **Formal Verification** - Lean proof assistants and theorem proving
