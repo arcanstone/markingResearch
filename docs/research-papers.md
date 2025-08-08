@@ -2,6 +2,8 @@
 
 This document contains links to key research papers and studies in automated mathematics grading, with brief explanations of their contributions and findings.
 
+*To add a new paper: Include linked title, author/institution info, brief summary of methods and findings. Organize by research category.*
+
 ## Vision and Language Model Based Grading
 
 ### [AI-assisted Automated Short Answer Grading of Handwritten University Level Mathematics Exams](https://arxiv.org/html/2408.11728v1)

@@ -2,6 +2,8 @@
 
 This document catalogs the key benchmarks and datasets used to evaluate automated mathematics grading systems, particularly for handwritten solutions.
 
+*To add a new benchmark: Include dataset name, description, key findings, and relevant metrics. Organize by research focus area.*
+
 ## Benchmarks Overview
 
 | Dataset/Benchmark | Description & Purpose | Key findings |

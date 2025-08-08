@@ -2,6 +2,8 @@
 
 This document catalogs current tools and platforms for automated mathematics grading, with links and analysis of their capabilities and limitations.
 
+*To add a new tool: Include linked title, category subtitle, brief description of capabilities and limitations. Group by tool type.*
+
 ## OCR and Digitization Tools
 
 ### [Mathpix Snip](https://mathpix.com/)
